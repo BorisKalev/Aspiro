@@ -32,7 +32,7 @@ export const CallToAction = () => {
             src={starImage.src}
             alt="star image"
             width={360}
-            className="absolute -left-[350px] -top-[137px]"
+            className="hidden md:block absolute -left-[350px] -top-[137px]"
             style={{
               translateY: translateY,
             }}
