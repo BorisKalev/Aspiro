@@ -8,6 +8,9 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Aspiro",
   description: "",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
+      <link rel="icon" href="/favicon.ico" />
       <body className={twMerge(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
       </body>

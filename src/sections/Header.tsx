@@ -28,11 +28,15 @@ export const Header = () => {
         <div className="container">
           <div className="flex items-center justify-between">
             <Image src={Logo} alt="Saas Logo" height={40} width={40} />
+
             <div className="md:hidden">
               {menuOpen ? (
-                <Close className="h-5 w-5" onClick={handleOnClick} />
+                ""
               ) : (
-                <MenuIcon className="h-5 w-5" onClick={handleOnClick} />
+                <MenuIcon
+                  className="h-5 w-5 cursor-pointer"
+                  onClick={handleOnClick}
+                />
               )}
             </div>
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
@@ -48,6 +52,52 @@ export const Header = () => {
           </div>
         </div>
       </div>
+
+      <div
+        className={`fixed top-0 right-0 h-screen w-[60%] bg-white shadow-lg z-30 transition-transform transform ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <nav className="flex flex-col p-6 gap-6">
+          {menuOpen ? (
+            <Close className="h-5 w-5 cursor-pointer" onClick={handleOnClick} />
+          ) : (
+            ""
+          )}
+          <div className="flex flex-col justify-center text-center">
+            <a href="#">About</a>
+            <div className="w-full bg-black h-[1px] my-5" />
+            <a href="#">Features</a>
+            <div className="w-full bg-black h-[1px] my-5" />
+            <a href="#">Customers</a>
+            <div className="w-full bg-black h-[1px] my-5" />
+            <a href="#">Updates</a>
+            <div className="w-full bg-black h-[1px] my-5" />
+            <a href="#">Help</a>
+            <div className="w-full bg-black h-[1px] my-5" />
+          </div>
+
+          <button className="bg-black text-white mt-4 px-4 py-2 rounded-lg font-medium">
+            Get for free
+          </button>
+          <div className="flex justify-center mt-3">
+            <Image
+              src={Logo}
+              alt="Saas Logo"
+              height={40}
+              width={40}
+              className=""
+            />
+          </div>
+        </nav>
+      </div>
+
+      <div
+        className={`fixed h-screen inset-0 z-20 bg-black/30 backdrop-blur-lg transition-opacity ${
+          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+        onClick={handleOnClick}
+      ></div>
     </header>
   );
 };
