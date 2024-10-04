@@ -38,10 +38,10 @@ export const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-t from-[#183EC2] to-[#000000] text-transparent bg-clip-text mt-6">
               <span className="">Aspiro</span>
             </h1>
-            <h1 className="text-5xl md:text-4xl font-medium tracking-tighter bg-gradient-to-t from-[#183EC2] to-[#011f5e] text-transparent bg-clip-text mt-6">
+            <h1 className="text-5xl md:text-4xl font-medium tracking-tighter bg-gradient-to-t from-[#183EC2] to-[#183EC2] text-transparent bg-clip-text mt-6">
               Pathway to productivity
             </h1>
-            <p className="text-xl bg-gradient-to-t from-[#183EC2] to-[#001086] text-transparent bg-clip-text tracking-tight mt-6">
+            <p className="text-xl text-black tracking-tight mt-6">
               Celebrate the joy of accomplishment with an app designed to track
               your progress, motivate your efforts, and celebrate your
               successes.
