@@ -2,6 +2,7 @@
 import ArrowIcon from "@/assets/arrow-right.svg";
 import cogImage from "@/assets/cog.png";
 import Image from "next/image";
+import Logo from "@/assets/logosaas.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import {
@@ -34,7 +35,10 @@ export const Hero = () => {
         <div className="md:flex items-center">
           <div className="md:w-[478px]">
             <div className="tag">Version 2.0 is here</div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-t from-[#183EC2] to-[#000000] text-transparent bg-clip-text mt-6">
+              <span>Aspiro</span>
+            </h1>
+            <h1 className="text-5xl md:text-4xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#183EC2] text-transparent bg-clip-text mt-6">
               Pathway to productivity
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
