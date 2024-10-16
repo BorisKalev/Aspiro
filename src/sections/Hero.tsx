@@ -15,10 +15,6 @@ export const Hero = () => {
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
-  // useMotionValueEvent(translateY, "change", (latestValue) =>
-  //   console.log(latestValue)
-  // );
-
   return (
     <section
       ref={heroRef}
